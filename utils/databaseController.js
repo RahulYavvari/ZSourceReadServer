@@ -27,7 +27,7 @@ const Post = dynamoose.model("PostInfoDB", postSchema);
 
 const fetchDatabase = async (tag) => {
     try {
-        // const myPost = await Post.get("adea4277ff98b12"); 
+        // [SAMPLE TAG]: adea4277ff98b12 
         const myPost = await Post.get(tag); 
         return myPost;
     } catch (error) {
