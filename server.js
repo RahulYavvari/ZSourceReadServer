@@ -22,7 +22,6 @@ app.get('/api/v1/posts/read', async (req, res) => {
             cacheResponse = cacheResponse.data;
             if (cacheResponse.value == null) {
                 const databaseResponse = await fetchDatabase(tag);
-                console.log("[LOD DB RESPONSE]", databaseResponse);
                 if (databaseResponse == undefined) {
                     res.status(200).json(JSON.stringify({ value: null }));
                 } else {
@@ -35,7 +34,6 @@ app.get('/api/v1/posts/read', async (req, res) => {
             }
         } else {
             const databaseResponse = await fetchDatabase(tag);
-            console.log("[LOD DB RESPONSE]", databaseResponse);
             if (databaseResponse == undefined) {
                 res.status(200).json(JSON.stringify({ value: null }));
             } else {
