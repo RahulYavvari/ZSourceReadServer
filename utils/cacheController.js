@@ -4,7 +4,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
 
-const CACHE_SERVER_URI = "http://16.170.233.233:9000";
+const CACHE_SERVER_URI = "http://zsourcecacheserver-1369468820.eu-north-1.elb.amazonaws.com";
 
 const fetchCache = async (tag) => {
     let cacheResponse = await axios.get(`${process.env.CACHE_SERVER_URI || CACHE_SERVER_URI}/api/v1/cache/get?key=${tag}`);

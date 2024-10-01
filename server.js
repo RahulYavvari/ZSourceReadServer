@@ -54,4 +54,4 @@ app.get("/health", (req, res) => {
 
 app.listen(process.env.PORT || PORT, () => {
     console.log("[LOG] Read Server Connected to port 6000");
-});
+});  
