@@ -1,4 +1,5 @@
 // CACHE SERVER: 16.170.233.233:9000
+// CACHE SERVER DNS: zsourcecacheserver-1369468820.eu-north-1.elb.amazonaws.com
 
 import axios from "axios";
 import dotenv from "dotenv";
